@@ -48,7 +48,7 @@ plt.show()
 
 w = np.zeros(3);
 timesteps = 0;
-b = 0;
+b = 0; # Used as bool
 while (b != 1):
     for j in range(len(PointList)):
 
@@ -65,7 +65,8 @@ while (b != 1):
             break;
     
         if(j == len(PointList) - 1):
-            b = 1
+            b = 1 # We have iterated through all the points and haven't broken through the for loop. Therefore, there is no
+                  # misclassified example. The algorithm has finished.
         
     timesteps = timesteps + 1;
 
