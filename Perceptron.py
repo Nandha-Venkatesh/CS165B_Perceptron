@@ -85,7 +85,6 @@ d = a * 10 + b;
 y = [c, d];
 
 message = "Linearly Separable Points and Perceptron Line: x_2 = {} * x_1 + {}".format(a, b);
-print(message)
 
 plt.plot(x, y, linestyle='solid', label="Perceptron Line")
 for i in PointList:
@@ -98,3 +97,6 @@ plt.xlabel("X1 axis")
 plt.ylabel("X2 axis")
 plt.grid()
 plt.show()
+
+message2 = "Perceptron Line: x_2 = {} * x_1 + {}".format(a, b);
+print(message2)
